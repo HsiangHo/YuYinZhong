@@ -10,7 +10,7 @@
 
 @interface HAFAudioPlayer : NSObject
 
--(void)startPlaying:(NSArray *)arrayTracks;
+-(void)startPlaying:(NSArray *)arrayTracks withBundle:(NSBundle *)bundle;
 -(void)stopPlaying;
 -(BOOL)isPlaying;
 

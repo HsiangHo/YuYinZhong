@@ -13,16 +13,18 @@
     AVAudioPlayer           *_audioPlayer;
     NSArray                 *_arrayOfTracks;
     NSUInteger              _currentTrackNumber;
+    NSBundle                *_bundle;
 }
 
--(void)startPlaying:(NSArray *)arrayTracks{
+-(void)startPlaying:(NSArray *)arrayTracks withBundle:(NSBundle *)bundle{
     if (_audioPlayer) {
         [_audioPlayer stop];
         _audioPlayer = nil;
     }
+    _bundle = bundle;
     _currentTrackNumber = 0;
     _arrayOfTracks = arrayTracks;
-    _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:[[NSString alloc] initWithString:[_arrayOfTracks objectAtIndex:_currentTrackNumber]] ofType:@"wav"]] error:NULL];
+    _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:[[self __bundle] pathForResource:[[NSString alloc] initWithString:[_arrayOfTracks objectAtIndex:_currentTrackNumber]] ofType:@"wav"]] error:NULL];
     _audioPlayer.delegate = (id<AVAudioPlayerDelegate>)self;
     [_audioPlayer play];
 }
@@ -39,8 +41,14 @@
     return bRtn;
 }
 
-- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
-{
+-(NSBundle *)__bundle{
+    if (nil == _bundle) {
+        return [NSBundle mainBundle];
+    }
+    return _bundle;
+}
+
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
     if (flag) {
         if (_currentTrackNumber < [_arrayOfTracks count] - 1) {
             _currentTrackNumber ++;
@@ -48,7 +56,7 @@
                 [_audioPlayer stop];
                 _audioPlayer = nil;
             }
-            _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:[[NSString alloc] initWithString:[_arrayOfTracks objectAtIndex:_currentTrackNumber]] ofType:@"wav"]] error:NULL];
+            _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:[[self __bundle] pathForResource:[[NSString alloc] initWithString:[_arrayOfTracks objectAtIndex:_currentTrackNumber]] ofType:@"wav"]] error:NULL];
             _audioPlayer.delegate = (id<AVAudioPlayerDelegate>)self;
             [_audioPlayer play];
         }
