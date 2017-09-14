@@ -35,6 +35,8 @@
 		984DE62D1F6ACA0100F0BDC8 /* yue.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6171F6ACA0100F0BDC8 /* yue.wav */; };
 		984DE62E1F6ACA0100F0BDC8 /* zheng.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6181F6ACA0100F0BDC8 /* zheng.wav */; };
 		984DE6311F6ACB9500F0BDC8 /* vc-Zh-Hans.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 984DE5FC1F6AC98B00F0BDC8 /* vc-Zh-Hans.bundle */; };
+		984DE6371F6ADAC200F0BDC8 /* HAFVoiceClockManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 984DE6361F6ADAC200F0BDC8 /* HAFVoiceClockManager.m */; };
+		984DE63A1F6AE1E200F0BDC8 /* HAFMandarinVoiceClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 984DE6391F6AE1E200F0BDC8 /* HAFMandarinVoiceClock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +73,10 @@
 		984DE6161F6ACA0100F0BDC8 /* xingqi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = xingqi.wav; sourceTree = "<group>"; };
 		984DE6171F6ACA0100F0BDC8 /* yue.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = yue.wav; sourceTree = "<group>"; };
 		984DE6181F6ACA0100F0BDC8 /* zheng.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = zheng.wav; sourceTree = "<group>"; };
+		984DE6351F6ADAC200F0BDC8 /* HAFVoiceClockManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAFVoiceClockManager.h; sourceTree = "<group>"; };
+		984DE6361F6ADAC200F0BDC8 /* HAFVoiceClockManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAFVoiceClockManager.m; sourceTree = "<group>"; };
+		984DE6381F6AE1E200F0BDC8 /* HAFMandarinVoiceClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAFMandarinVoiceClock.h; sourceTree = "<group>"; };
+		984DE6391F6AE1E200F0BDC8 /* HAFMandarinVoiceClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAFMandarinVoiceClock.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,10 @@
 			children = (
 				984DE5A31F685E9500F0BDC8 /* AppDelegate.h */,
 				984DE5A41F685E9500F0BDC8 /* AppDelegate.m */,
+				984DE6351F6ADAC200F0BDC8 /* HAFVoiceClockManager.h */,
+				984DE6361F6ADAC200F0BDC8 /* HAFVoiceClockManager.m */,
+				984DE6381F6AE1E200F0BDC8 /* HAFMandarinVoiceClock.h */,
+				984DE6391F6AE1E200F0BDC8 /* HAFMandarinVoiceClock.m */,
 				984DE5F51F6AA48400F0BDC8 /* HAFAudioPlayer.h */,
 				984DE5F61F6AA48400F0BDC8 /* HAFAudioPlayer.m */,
 				984DE5A91F685E9500F0BDC8 /* Assets.xcassets */,
@@ -294,7 +304,9 @@
 			files = (
 				984DE5A81F685E9500F0BDC8 /* main.m in Sources */,
 				984DE5A51F685E9500F0BDC8 /* AppDelegate.m in Sources */,
+				984DE6371F6ADAC200F0BDC8 /* HAFVoiceClockManager.m in Sources */,
 				984DE5F71F6AA48400F0BDC8 /* HAFAudioPlayer.m in Sources */,
+				984DE63A1F6AE1E200F0BDC8 /* HAFMandarinVoiceClock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +508,7 @@
 				984DE6011F6AC98B00F0BDC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
