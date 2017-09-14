@@ -81,15 +81,10 @@
 
 #pragma mark - Private methods
 -(NSArray *)__currentTime{
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"HH:mm"];
-    NSString *strDate = [dateFormatter stringFromDate:[NSDate date]];
-    NSArray *arrayDate = [strDate componentsSeparatedByString:@":"];
-    
     NSMutableArray *arrayRslt = [[NSMutableArray alloc] init];
-    int nHour = [[arrayDate objectAtIndex:0] intValue];
-    int nMinute = [[arrayDate objectAtIndex:1] intValue];
-    
+    NSDateComponents *comps = [[NSCalendar currentCalendar] components:NSHourCalendarUnit | NSMinuteCalendarUnit fromDate:[NSDate date]];
+    NSInteger nHour = comps.hour;
+    NSInteger nMinute = comps.minute;
     [arrayRslt addObject:kXianzaishijian];
     if (2 == nHour/10) {
         [arrayRslt addObject:k2];
@@ -97,8 +92,9 @@
     }else if (1 == nHour/10){
         [arrayRslt addObject:k10];
     }
-    if (0 != nHour%10){
-         [arrayRslt addObject:[NSString stringWithFormat:@"%d",nHour%10]];
+    
+    if (0 == nHour || 0 != nHour%10){
+         [arrayRslt addObject:[NSString stringWithFormat:@"%ld",nHour%10]];
     }
     [arrayRslt addObject:kDian];
     
@@ -107,14 +103,14 @@
     }else{
         if (9 < nMinute) {
             if(19 < nMinute){
-                [arrayRslt addObject:[NSString stringWithFormat:@"%d",nMinute/10]];
+                [arrayRslt addObject:[NSString stringWithFormat:@"%ld",nMinute/10]];
             }
             [arrayRslt addObject:k10];
         }else{
             [arrayRslt addObject:k0];
         }
         if (0 != nMinute%10) {
-            [arrayRslt addObject:[NSString stringWithFormat:@"%d",nMinute%10]];
+            [arrayRslt addObject:[NSString stringWithFormat:@"%ld",nMinute%10]];
         }
         [arrayRslt addObject:kFen];
     }
@@ -139,27 +135,23 @@
 }
 
 -(NSArray *)__currentMonthAndDay{
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"MM-dd"];
-    NSString *strDate = [dateFormatter stringFromDate:[NSDate date]];
-    NSArray *arrayDate = [strDate componentsSeparatedByString:@"-"];
-    
-    int nMonth = [[arrayDate objectAtIndex:0] intValue];
-    int nDay = [[arrayDate objectAtIndex:1] intValue];
+    NSDateComponents *comps = [[NSCalendar currentCalendar] components:NSMonthCalendarUnit | NSDayCalendarUnit fromDate:[NSDate date]];
+    NSInteger nMonth = comps.month;
+    NSInteger nDay = comps.day;
     NSMutableArray *arrayRslt = [[NSMutableArray alloc] init];
     if (nMonth > 9) {
         [arrayRslt addObject:k10];
     }
-    [arrayRslt addObject:[NSString stringWithFormat:@"%d",nMonth%10]];
+    [arrayRslt addObject:[NSString stringWithFormat:@"%ld",nMonth%10]];
     [arrayRslt addObject:kYue];
     
     if (nDay > 9) {
         if (nDay/10 > 1) {
-            [arrayRslt addObject:[NSString stringWithFormat:@"%d",nDay/10]];
+            [arrayRslt addObject:[NSString stringWithFormat:@"%ld",nDay/10]];
         }
         [arrayRslt addObject:k10];
         if (0 != nDay%10) {
-            [arrayRslt addObject:[NSString stringWithFormat:@"%d",nDay%10]];
+            [arrayRslt addObject:[NSString stringWithFormat:@"%ld",nDay%10]];
         }
         [arrayRslt addObject:kRi];
     }
@@ -167,15 +159,13 @@
 }
 
 -(NSArray *)__currentYear{
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy"];
-    NSString *strDate = [dateFormatter stringFromDate:[NSDate date]];
-    int nYear = [strDate intValue];
+    NSDateComponents *comps = [[NSCalendar currentCalendar] components:NSYearCalendarUnit fromDate:[NSDate date]];
+    NSInteger nYear = comps.year;
     NSMutableArray *arrayRslt = [[NSMutableArray alloc] init];
-    [arrayRslt addObject:[NSString stringWithFormat:@"%d",nYear/1000]];
-    [arrayRslt addObject:[NSString stringWithFormat:@"%d",(nYear/100)%10]];
-    [arrayRslt addObject:[NSString stringWithFormat:@"%d",(nYear/10)%100]];
-    [arrayRslt addObject:[NSString stringWithFormat:@"%d",nYear%10]];
+    [arrayRslt addObject:[NSString stringWithFormat:@"%ld",nYear/1000]];
+    [arrayRslt addObject:[NSString stringWithFormat:@"%ld",(nYear/100)%10]];
+    [arrayRslt addObject:[NSString stringWithFormat:@"%ld",(nYear/10)%100]];
+    [arrayRslt addObject:[NSString stringWithFormat:@"%ld",nYear%10]];
     [arrayRslt addObject:kNian];
     return [arrayRslt copy];
 }
