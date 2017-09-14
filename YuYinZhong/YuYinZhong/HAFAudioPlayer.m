@@ -1,0 +1,58 @@
+//
+//  HAFAudioPlayer.m
+//  YuYinZhong
+//
+//  Created by Jovi on 9/14/17.
+//  Copyright © 2017 Jovi. All rights reserved.
+//
+
+#import "HAFAudioPlayer.h"
+#import <AVFoundation/AVFoundation.h>
+
+@implementation HAFAudioPlayer{
+    AVAudioPlayer           *_audioPlayer;
+    NSArray                 *_arrayOfTracks;
+    NSUInteger              _currentTrackNumber;
+}
+
+-(void)startPlaying:(NSArray *)arrayTracks{
+    if (_audioPlayer) {
+        [_audioPlayer stop];
+        _audioPlayer = nil;
+    }
+    _currentTrackNumber = 0;
+    _arrayOfTracks = arrayTracks;
+    _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:[[NSString alloc] initWithString:[_arrayOfTracks objectAtIndex:_currentTrackNumber]] ofType:@"wav"]] error:NULL];
+    _audioPlayer.delegate = (id<AVAudioPlayerDelegate>)self;
+    [_audioPlayer play];
+}
+
+- (void)stopPlaying{
+    [_audioPlayer stop];
+}
+
+-(BOOL)isPlaying{
+    BOOL bRtn = NO;
+    if (nil != _audioPlayer) {
+        bRtn = [_audioPlayer isPlaying];
+    }
+    return bRtn;
+}
+
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
+{
+    if (flag) {
+        if (_currentTrackNumber < [_arrayOfTracks count] - 1) {
+            _currentTrackNumber ++;
+            if (nil == _audioPlayer) {
+                [_audioPlayer stop];
+                _audioPlayer = nil;
+            }
+            _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:[[NSString alloc] initWithString:[_arrayOfTracks objectAtIndex:_currentTrackNumber]] ofType:@"wav"]] error:NULL];
+            _audioPlayer.delegate = (id<AVAudioPlayerDelegate>)self;
+            [_audioPlayer play];
+        }
+    }
+}
+
+@end

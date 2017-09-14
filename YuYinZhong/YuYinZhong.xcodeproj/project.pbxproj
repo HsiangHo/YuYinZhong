@@ -11,6 +11,7 @@
 		984DE5A81F685E9500F0BDC8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 984DE5A71F685E9500F0BDC8 /* main.m */; };
 		984DE5AA1F685E9500F0BDC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 984DE5A91F685E9500F0BDC8 /* Assets.xcassets */; };
 		984DE5AD1F685E9500F0BDC8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984DE5AB1F685E9500F0BDC8 /* MainMenu.xib */; };
+		984DE5F71F6AA48400F0BDC8 /* HAFAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 984DE5F61F6AA48400F0BDC8 /* HAFAudioPlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,8 @@
 		984DE5A91F685E9500F0BDC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		984DE5AC1F685E9500F0BDC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		984DE5AE1F685E9500F0BDC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		984DE5F51F6AA48400F0BDC8 /* HAFAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAFAudioPlayer.h; sourceTree = "<group>"; };
+		984DE5F61F6AA48400F0BDC8 /* HAFAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAFAudioPlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +58,8 @@
 			children = (
 				984DE5A31F685E9500F0BDC8 /* AppDelegate.h */,
 				984DE5A41F685E9500F0BDC8 /* AppDelegate.m */,
+				984DE5F51F6AA48400F0BDC8 /* HAFAudioPlayer.h */,
+				984DE5F61F6AA48400F0BDC8 /* HAFAudioPlayer.m */,
 				984DE5A91F685E9500F0BDC8 /* Assets.xcassets */,
 				984DE5AB1F685E9500F0BDC8 /* MainMenu.xib */,
 				984DE5AE1F685E9500F0BDC8 /* Info.plist */,
@@ -143,6 +148,7 @@
 			files = (
 				984DE5A81F685E9500F0BDC8 /* main.m in Sources */,
 				984DE5A51F685E9500F0BDC8 /* AppDelegate.m in Sources */,
+				984DE5F71F6AA48400F0BDC8 /* HAFAudioPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +302,7 @@
 				984DE5B31F685E9500F0BDC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
