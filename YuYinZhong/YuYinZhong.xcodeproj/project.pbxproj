@@ -31,7 +31,7 @@
 		984DE6291F6ACA0100F0BDC8 /* shangwu.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6131F6ACA0100F0BDC8 /* shangwu.wav */; };
 		984DE62A1F6ACA0100F0BDC8 /* xianzaishijian.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6141F6ACA0100F0BDC8 /* xianzaishijian.wav */; };
 		984DE62B1F6ACA0100F0BDC8 /* xiawu.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6151F6ACA0100F0BDC8 /* xiawu.wav */; };
-		984DE62C1F6ACA0100F0BDC8 /* xinqi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6161F6ACA0100F0BDC8 /* xinqi.wav */; };
+		984DE62C1F6ACA0100F0BDC8 /* xingqi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6161F6ACA0100F0BDC8 /* xingqi.wav */; };
 		984DE62D1F6ACA0100F0BDC8 /* yue.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6171F6ACA0100F0BDC8 /* yue.wav */; };
 		984DE62E1F6ACA0100F0BDC8 /* zheng.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6181F6ACA0100F0BDC8 /* zheng.wav */; };
 		984DE6311F6ACB9500F0BDC8 /* vc-Zh-Hans.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 984DE5FC1F6AC98B00F0BDC8 /* vc-Zh-Hans.bundle */; };
@@ -68,7 +68,7 @@
 		984DE6131F6ACA0100F0BDC8 /* shangwu.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shangwu.wav; sourceTree = "<group>"; };
 		984DE6141F6ACA0100F0BDC8 /* xianzaishijian.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = xianzaishijian.wav; sourceTree = "<group>"; };
 		984DE6151F6ACA0100F0BDC8 /* xiawu.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = xiawu.wav; sourceTree = "<group>"; };
-		984DE6161F6ACA0100F0BDC8 /* xinqi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = xinqi.wav; sourceTree = "<group>"; };
+		984DE6161F6ACA0100F0BDC8 /* xingqi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = xingqi.wav; sourceTree = "<group>"; };
 		984DE6171F6ACA0100F0BDC8 /* yue.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = yue.wav; sourceTree = "<group>"; };
 		984DE6181F6ACA0100F0BDC8 /* zheng.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = zheng.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -163,7 +163,7 @@
 				984DE6131F6ACA0100F0BDC8 /* shangwu.wav */,
 				984DE6141F6ACA0100F0BDC8 /* xianzaishijian.wav */,
 				984DE6151F6ACA0100F0BDC8 /* xiawu.wav */,
-				984DE6161F6ACA0100F0BDC8 /* xinqi.wav */,
+				984DE6161F6ACA0100F0BDC8 /* xingqi.wav */,
 				984DE6171F6ACA0100F0BDC8 /* yue.wav */,
 				984DE6181F6ACA0100F0BDC8 /* zheng.wav */,
 			);
@@ -275,7 +275,7 @@
 				984DE61B1F6ACA0100F0BDC8 /* 2.wav in Resources */,
 				984DE62B1F6ACA0100F0BDC8 /* xiawu.wav in Resources */,
 				984DE6261F6ACA0100F0BDC8 /* jintianshi.wav in Resources */,
-				984DE62C1F6ACA0100F0BDC8 /* xinqi.wav in Resources */,
+				984DE62C1F6ACA0100F0BDC8 /* xingqi.wav in Resources */,
 				984DE61A1F6ACA0100F0BDC8 /* 1.wav in Resources */,
 				984DE6191F6ACA0100F0BDC8 /* 0.wav in Resources */,
 				984DE6281F6ACA0100F0BDC8 /* ri.wav in Resources */,
