@@ -12,6 +12,29 @@
 		984DE5AA1F685E9500F0BDC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 984DE5A91F685E9500F0BDC8 /* Assets.xcassets */; };
 		984DE5AD1F685E9500F0BDC8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984DE5AB1F685E9500F0BDC8 /* MainMenu.xib */; };
 		984DE5F71F6AA48400F0BDC8 /* HAFAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 984DE5F61F6AA48400F0BDC8 /* HAFAudioPlayer.m */; };
+		984DE6191F6ACA0100F0BDC8 /* 0.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6031F6ACA0100F0BDC8 /* 0.wav */; };
+		984DE61A1F6ACA0100F0BDC8 /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6041F6ACA0100F0BDC8 /* 1.wav */; };
+		984DE61B1F6ACA0100F0BDC8 /* 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6051F6ACA0100F0BDC8 /* 2.wav */; };
+		984DE61C1F6ACA0100F0BDC8 /* 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6061F6ACA0100F0BDC8 /* 3.wav */; };
+		984DE61D1F6ACA0100F0BDC8 /* 4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6071F6ACA0100F0BDC8 /* 4.wav */; };
+		984DE61E1F6ACA0100F0BDC8 /* 5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6081F6ACA0100F0BDC8 /* 5.wav */; };
+		984DE61F1F6ACA0100F0BDC8 /* 6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6091F6ACA0100F0BDC8 /* 6.wav */; };
+		984DE6201F6ACA0100F0BDC8 /* 7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE60A1F6ACA0100F0BDC8 /* 7.wav */; };
+		984DE6211F6ACA0100F0BDC8 /* 8.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE60B1F6ACA0100F0BDC8 /* 8.wav */; };
+		984DE6221F6ACA0100F0BDC8 /* 9.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE60C1F6ACA0100F0BDC8 /* 9.wav */; };
+		984DE6231F6ACA0100F0BDC8 /* 10.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE60D1F6ACA0100F0BDC8 /* 10.wav */; };
+		984DE6241F6ACA0100F0BDC8 /* dian.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE60E1F6ACA0100F0BDC8 /* dian.wav */; };
+		984DE6251F6ACA0100F0BDC8 /* fen.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE60F1F6ACA0100F0BDC8 /* fen.wav */; };
+		984DE6261F6ACA0100F0BDC8 /* jintianshi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6101F6ACA0100F0BDC8 /* jintianshi.wav */; };
+		984DE6271F6ACA0100F0BDC8 /* nian.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6111F6ACA0100F0BDC8 /* nian.wav */; };
+		984DE6281F6ACA0100F0BDC8 /* ri.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6121F6ACA0100F0BDC8 /* ri.wav */; };
+		984DE6291F6ACA0100F0BDC8 /* shangwu.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6131F6ACA0100F0BDC8 /* shangwu.wav */; };
+		984DE62A1F6ACA0100F0BDC8 /* xianzaishijian.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6141F6ACA0100F0BDC8 /* xianzaishijian.wav */; };
+		984DE62B1F6ACA0100F0BDC8 /* xiawu.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6151F6ACA0100F0BDC8 /* xiawu.wav */; };
+		984DE62C1F6ACA0100F0BDC8 /* xinqi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6161F6ACA0100F0BDC8 /* xinqi.wav */; };
+		984DE62D1F6ACA0100F0BDC8 /* yue.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6171F6ACA0100F0BDC8 /* yue.wav */; };
+		984DE62E1F6ACA0100F0BDC8 /* zheng.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6181F6ACA0100F0BDC8 /* zheng.wav */; };
+		984DE6311F6ACB9500F0BDC8 /* vc-Zh-Hans.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 984DE5FC1F6AC98B00F0BDC8 /* vc-Zh-Hans.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +47,41 @@
 		984DE5AE1F685E9500F0BDC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		984DE5F51F6AA48400F0BDC8 /* HAFAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAFAudioPlayer.h; sourceTree = "<group>"; };
 		984DE5F61F6AA48400F0BDC8 /* HAFAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAFAudioPlayer.m; sourceTree = "<group>"; };
+		984DE5FC1F6AC98B00F0BDC8 /* vc-Zh-Hans.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "vc-Zh-Hans.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		984DE5FE1F6AC98B00F0BDC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		984DE6031F6ACA0100F0BDC8 /* 0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 0.wav; sourceTree = "<group>"; };
+		984DE6041F6ACA0100F0BDC8 /* 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1.wav; sourceTree = "<group>"; };
+		984DE6051F6ACA0100F0BDC8 /* 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 2.wav; sourceTree = "<group>"; };
+		984DE6061F6ACA0100F0BDC8 /* 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3.wav; sourceTree = "<group>"; };
+		984DE6071F6ACA0100F0BDC8 /* 4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 4.wav; sourceTree = "<group>"; };
+		984DE6081F6ACA0100F0BDC8 /* 5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 5.wav; sourceTree = "<group>"; };
+		984DE6091F6ACA0100F0BDC8 /* 6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 6.wav; sourceTree = "<group>"; };
+		984DE60A1F6ACA0100F0BDC8 /* 7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 7.wav; sourceTree = "<group>"; };
+		984DE60B1F6ACA0100F0BDC8 /* 8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 8.wav; sourceTree = "<group>"; };
+		984DE60C1F6ACA0100F0BDC8 /* 9.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 9.wav; sourceTree = "<group>"; };
+		984DE60D1F6ACA0100F0BDC8 /* 10.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 10.wav; sourceTree = "<group>"; };
+		984DE60E1F6ACA0100F0BDC8 /* dian.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dian.wav; sourceTree = "<group>"; };
+		984DE60F1F6ACA0100F0BDC8 /* fen.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fen.wav; sourceTree = "<group>"; };
+		984DE6101F6ACA0100F0BDC8 /* jintianshi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jintianshi.wav; sourceTree = "<group>"; };
+		984DE6111F6ACA0100F0BDC8 /* nian.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = nian.wav; sourceTree = "<group>"; };
+		984DE6121F6ACA0100F0BDC8 /* ri.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ri.wav; sourceTree = "<group>"; };
+		984DE6131F6ACA0100F0BDC8 /* shangwu.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shangwu.wav; sourceTree = "<group>"; };
+		984DE6141F6ACA0100F0BDC8 /* xianzaishijian.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = xianzaishijian.wav; sourceTree = "<group>"; };
+		984DE6151F6ACA0100F0BDC8 /* xiawu.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = xiawu.wav; sourceTree = "<group>"; };
+		984DE6161F6ACA0100F0BDC8 /* xinqi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = xinqi.wav; sourceTree = "<group>"; };
+		984DE6171F6ACA0100F0BDC8 /* yue.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = yue.wav; sourceTree = "<group>"; };
+		984DE6181F6ACA0100F0BDC8 /* zheng.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = zheng.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		984DE59D1F685E9500F0BDC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		984DE5F91F6AC98B00F0BDC8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				984DE5A21F685E9500F0BDC8 /* YuYinZhong */,
+				984DE5FD1F6AC98B00F0BDC8 /* vc-Zh-Hans */,
 				984DE5A11F685E9500F0BDC8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				984DE5A01F685E9500F0BDC8 /* YuYinZhong.app */,
+				984DE5FC1F6AC98B00F0BDC8 /* vc-Zh-Hans.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +132,44 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		984DE5FD1F6AC98B00F0BDC8 /* vc-Zh-Hans */ = {
+			isa = PBXGroup;
+			children = (
+				984DE5FE1F6AC98B00F0BDC8 /* Info.plist */,
+				984DE6021F6AC9AE00F0BDC8 /* audio */,
+			);
+			path = "vc-Zh-Hans";
+			sourceTree = "<group>";
+		};
+		984DE6021F6AC9AE00F0BDC8 /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				984DE6031F6ACA0100F0BDC8 /* 0.wav */,
+				984DE6041F6ACA0100F0BDC8 /* 1.wav */,
+				984DE6051F6ACA0100F0BDC8 /* 2.wav */,
+				984DE6061F6ACA0100F0BDC8 /* 3.wav */,
+				984DE6071F6ACA0100F0BDC8 /* 4.wav */,
+				984DE6081F6ACA0100F0BDC8 /* 5.wav */,
+				984DE6091F6ACA0100F0BDC8 /* 6.wav */,
+				984DE60A1F6ACA0100F0BDC8 /* 7.wav */,
+				984DE60B1F6ACA0100F0BDC8 /* 8.wav */,
+				984DE60C1F6ACA0100F0BDC8 /* 9.wav */,
+				984DE60D1F6ACA0100F0BDC8 /* 10.wav */,
+				984DE60E1F6ACA0100F0BDC8 /* dian.wav */,
+				984DE60F1F6ACA0100F0BDC8 /* fen.wav */,
+				984DE6101F6ACA0100F0BDC8 /* jintianshi.wav */,
+				984DE6111F6ACA0100F0BDC8 /* nian.wav */,
+				984DE6121F6ACA0100F0BDC8 /* ri.wav */,
+				984DE6131F6ACA0100F0BDC8 /* shangwu.wav */,
+				984DE6141F6ACA0100F0BDC8 /* xianzaishijian.wav */,
+				984DE6151F6ACA0100F0BDC8 /* xiawu.wav */,
+				984DE6161F6ACA0100F0BDC8 /* xinqi.wav */,
+				984DE6171F6ACA0100F0BDC8 /* yue.wav */,
+				984DE6181F6ACA0100F0BDC8 /* zheng.wav */,
+			);
+			name = audio;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -96,6 +190,23 @@
 			productReference = 984DE5A01F685E9500F0BDC8 /* YuYinZhong.app */;
 			productType = "com.apple.product-type.application";
 		};
+		984DE5FB1F6AC98B00F0BDC8 /* vc-Zh-Hans */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 984DE5FF1F6AC98B00F0BDC8 /* Build configuration list for PBXNativeTarget "vc-Zh-Hans" */;
+			buildPhases = (
+				984DE5F81F6AC98B00F0BDC8 /* Sources */,
+				984DE5F91F6AC98B00F0BDC8 /* Frameworks */,
+				984DE5FA1F6AC98B00F0BDC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "vc-Zh-Hans";
+			productName = "vc-Zh-Hans";
+			productReference = 984DE5FC1F6AC98B00F0BDC8 /* vc-Zh-Hans.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -106,6 +217,10 @@
 				ORGANIZATIONNAME = Jovi;
 				TargetAttributes = {
 					984DE59F1F685E9500F0BDC8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					984DE5FB1F6AC98B00F0BDC8 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -125,6 +240,7 @@
 			projectRoot = "";
 			targets = (
 				984DE59F1F685E9500F0BDC8 /* YuYinZhong */,
+				984DE5FB1F6AC98B00F0BDC8 /* vc-Zh-Hans */,
 			);
 		};
 /* End PBXProject section */
@@ -134,8 +250,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				984DE6311F6ACB9500F0BDC8 /* vc-Zh-Hans.bundle in Resources */,
 				984DE5AA1F685E9500F0BDC8 /* Assets.xcassets in Resources */,
 				984DE5AD1F685E9500F0BDC8 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		984DE5FA1F6AC98B00F0BDC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				984DE6271F6ACA0100F0BDC8 /* nian.wav in Resources */,
+				984DE62E1F6ACA0100F0BDC8 /* zheng.wav in Resources */,
+				984DE6241F6ACA0100F0BDC8 /* dian.wav in Resources */,
+				984DE6211F6ACA0100F0BDC8 /* 8.wav in Resources */,
+				984DE6291F6ACA0100F0BDC8 /* shangwu.wav in Resources */,
+				984DE6201F6ACA0100F0BDC8 /* 7.wav in Resources */,
+				984DE61E1F6ACA0100F0BDC8 /* 5.wav in Resources */,
+				984DE61C1F6ACA0100F0BDC8 /* 3.wav in Resources */,
+				984DE6221F6ACA0100F0BDC8 /* 9.wav in Resources */,
+				984DE6231F6ACA0100F0BDC8 /* 10.wav in Resources */,
+				984DE61F1F6ACA0100F0BDC8 /* 6.wav in Resources */,
+				984DE62A1F6ACA0100F0BDC8 /* xianzaishijian.wav in Resources */,
+				984DE61B1F6ACA0100F0BDC8 /* 2.wav in Resources */,
+				984DE62B1F6ACA0100F0BDC8 /* xiawu.wav in Resources */,
+				984DE6261F6ACA0100F0BDC8 /* jintianshi.wav in Resources */,
+				984DE62C1F6ACA0100F0BDC8 /* xinqi.wav in Resources */,
+				984DE61A1F6ACA0100F0BDC8 /* 1.wav in Resources */,
+				984DE6191F6ACA0100F0BDC8 /* 0.wav in Resources */,
+				984DE6281F6ACA0100F0BDC8 /* ri.wav in Resources */,
+				984DE62D1F6ACA0100F0BDC8 /* yue.wav in Resources */,
+				984DE61D1F6ACA0100F0BDC8 /* 4.wav in Resources */,
+				984DE6251F6ACA0100F0BDC8 /* fen.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +295,13 @@
 				984DE5A81F685E9500F0BDC8 /* main.m in Sources */,
 				984DE5A51F685E9500F0BDC8 /* AppDelegate.m in Sources */,
 				984DE5F71F6AA48400F0BDC8 /* HAFAudioPlayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		984DE5F81F6AC98B00F0BDC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +436,38 @@
 			};
 			name = Release;
 		};
+		984DE6001F6AC98B00F0BDC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/Output";
+				INFOPLIST_FILE = "vc-Zh-Hans/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HyperartFlow.vc-Zh-Hans";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		984DE6011F6AC98B00F0BDC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/Output";
+				INFOPLIST_FILE = "vc-Zh-Hans/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HyperartFlow.vc-Zh-Hans";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -303,6 +488,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		984DE5FF1F6AC98B00F0BDC8 /* Build configuration list for PBXNativeTarget "vc-Zh-Hans" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				984DE6001F6AC98B00F0BDC8 /* Debug */,
+				984DE6011F6AC98B00F0BDC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
