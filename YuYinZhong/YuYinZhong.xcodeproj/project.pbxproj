@@ -103,6 +103,7 @@
 				984DE5A21F685E9500F0BDC8 /* YuYinZhong */,
 				984DE5FD1F6AC98B00F0BDC8 /* vc-Zh-Hans */,
 				984DE5A11F685E9500F0BDC8 /* Products */,
+				984DE63B1F6BF68200F0BDC8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -178,6 +179,13 @@
 				984DE6181F6ACA0100F0BDC8 /* zheng.wav */,
 			);
 			name = audio;
+			sourceTree = "<group>";
+		};
+		984DE63B1F6BF68200F0BDC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
