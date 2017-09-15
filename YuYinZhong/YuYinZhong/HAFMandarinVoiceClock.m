@@ -97,7 +97,9 @@
     }else if (1 == nHour/10){
         [arrayRslt addObject:k10];
     }
-    [arrayRslt addObject:[NSString stringWithFormat:@"%d",nHour%10]];
+    if (0 != nHour%10){
+         [arrayRslt addObject:[NSString stringWithFormat:@"%d",nHour%10]];
+    }
     [arrayRslt addObject:kDian];
     
     if (0 == nMinute) {
