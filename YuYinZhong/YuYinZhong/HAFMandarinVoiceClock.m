@@ -8,6 +8,27 @@
 
 #import "HAFMandarinVoiceClock.h"
 
+#define kJintianshijian             @"jintianshi"
+#define kXianzaishijian             @"xianzaishijian"
+#define k0                          @"0"
+#define k1                          @"1"
+#define k2                          @"2"
+#define k3                          @"3"
+#define k4                          @"4"
+#define k5                          @"5"
+#define k6                          @"6"
+#define k7                          @"7"
+#define k8                          @"8"
+#define k9                          @"9"
+#define k10                         @"10"
+#define kDian                       @"dian"
+#define kZheng                      @"zheng"
+#define kFen                        @"fen"
+#define kYue                        @"yue"
+#define kRi                         @"ri"
+#define kNian                       @"nian"
+#define kXingqi                     @"xingqi"
+
 @implementation HAFMandarinVoiceClock{
     BOOL        _is24HourClock;
 }
@@ -18,7 +39,7 @@
     _is24HourClock = bValue;
 }
 
--(NSArray *)announceThisTime:(HAF_Announce_Format_Type)type{
+-(NSArray<NSString *> *)announceThisTime:(HAF_Announce_Format_Type)type{
     NSMutableArray *rslt = [[NSMutableArray alloc] init];
     switch (type) {
         case eHAF_Announce_HH_mm:
@@ -26,26 +47,26 @@
             break;
             
         case eHAF_Announce_WEEK_HH_mm:
-            [rslt addObject:@"jintianshi"];
+            [rslt addObject:kJintianshijian];
             [rslt addObjectsFromArray:[self __currentDayOfWeak]];
             [rslt addObjectsFromArray:[self __currentTime]];
             break;
             
         case eHAF_Announce_MM_dd_HH_mm:
-            [rslt addObject:@"jintianshi"];
+            [rslt addObject:kJintianshijian];
             [rslt addObjectsFromArray:[self __currentMonthAndDay]];
             [rslt addObjectsFromArray:[self __currentTime]];
             break;
             
         case eHAF_Announce_MM_dd_WEEK_HH_mm:
-            [rslt addObject:@"jintianshi"];
+            [rslt addObject:kJintianshijian];
             [rslt addObjectsFromArray:[self __currentMonthAndDay]];
             [rslt addObjectsFromArray:[self __currentDayOfWeak]];
             [rslt addObjectsFromArray:[self __currentTime]];
             break;
             
         case eHAF_Announce_yyyy_MM_dd_WEEK_HH_mm:
-            [rslt addObject:@"jintianshi"];
+            [rslt addObject:kJintianshijian];
             [rslt addObjectsFromArray:[self __currentYear]];
             [rslt addObjectsFromArray:[self __currentMonthAndDay]];
             [rslt addObjectsFromArray:[self __currentDayOfWeak]];
@@ -69,31 +90,31 @@
     int nHour = [[arrayDate objectAtIndex:0] intValue];
     int nMinute = [[arrayDate objectAtIndex:1] intValue];
     
-    [arrayRslt addObject:@"xianzaishijian"];
+    [arrayRslt addObject:kXianzaishijian];
     if (2 == nHour/10) {
-        [arrayRslt addObject:@"2"];
-        [arrayRslt addObject:@"10"];
+        [arrayRslt addObject:k2];
+        [arrayRslt addObject:k10];
     }else if (1 == nHour/10){
-        [arrayRslt addObject:@"10"];
+        [arrayRslt addObject:k10];
     }
     [arrayRslt addObject:[NSString stringWithFormat:@"%d",nHour%10]];
-    [arrayRslt addObject:@"dian"];
+    [arrayRslt addObject:kDian];
     
     if (0 == nMinute) {
-        [arrayRslt addObject:@"zheng"];
+        [arrayRslt addObject:kZheng];
     }else{
         if (9 < nMinute) {
             if(19 < nMinute){
                 [arrayRslt addObject:[NSString stringWithFormat:@"%d",nMinute/10]];
             }
-            [arrayRslt addObject:@"10"];
+            [arrayRslt addObject:k10];
         }else{
-            [arrayRslt addObject:@"0"];
+            [arrayRslt addObject:k0];
         }
         if (0 != nMinute%10) {
             [arrayRslt addObject:[NSString stringWithFormat:@"%d",nMinute%10]];
         }
-        [arrayRslt addObject:@"fen"];
+        [arrayRslt addObject:kFen];
     }
     return [arrayRslt copy];
 }
@@ -106,9 +127,9 @@
                        fromDate:date];
     NSInteger weekday = comps.weekday;
     NSMutableArray *arrayRslt = [[NSMutableArray alloc] init];
-    [arrayRslt addObject:@"xingqi"];
+    [arrayRslt addObject:kXingqi];
     if (1 == weekday) {
-        [arrayRslt addObject:@"ri"];
+        [arrayRslt addObject:kRi];
     }else{
         [arrayRslt addObject:[NSString stringWithFormat:@"%d",(int)(weekday-1)]];
     }
@@ -125,20 +146,20 @@
     int nDay = [[arrayDate objectAtIndex:1] intValue];
     NSMutableArray *arrayRslt = [[NSMutableArray alloc] init];
     if (nMonth > 9) {
-        [arrayRslt addObject:@"10"];
+        [arrayRslt addObject:k10];
     }
     [arrayRslt addObject:[NSString stringWithFormat:@"%d",nMonth%10]];
-    [arrayRslt addObject:@"yue"];
+    [arrayRslt addObject:kYue];
     
     if (nDay > 9) {
         if (nDay/10 > 1) {
             [arrayRslt addObject:[NSString stringWithFormat:@"%d",nDay/10]];
         }
-        [arrayRslt addObject:@"10"];
+        [arrayRslt addObject:k10];
         if (0 != nDay%10) {
             [arrayRslt addObject:[NSString stringWithFormat:@"%d",nDay%10]];
         }
-        [arrayRslt addObject:@"ri"];
+        [arrayRslt addObject:kRi];
     }
     return [arrayRslt copy];
 }
@@ -153,7 +174,7 @@
     [arrayRslt addObject:[NSString stringWithFormat:@"%d",(nYear/100)%10]];
     [arrayRslt addObject:[NSString stringWithFormat:@"%d",(nYear/10)%100]];
     [arrayRslt addObject:[NSString stringWithFormat:@"%d",nYear%10]];
-    [arrayRslt addObject:@"nian"];
+    [arrayRslt addObject:kNian];
     return [arrayRslt copy];
 }
 
