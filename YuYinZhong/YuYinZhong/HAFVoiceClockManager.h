@@ -9,6 +9,13 @@
 #import <Foundation/Foundation.h>
 
 typedef enum : NSUInteger {
+    eHAF_Announce_Hourly,
+    eHAF_Announce_Half_Hourly,
+    eHAF_Announce_Quarter_Hourly,
+    eHAF_Announce_By_Hand,
+}HAF_Announce_Rule;
+
+typedef enum : NSUInteger {
     eHAF_Announce_HH_mm,
     eHAF_Announce_MM_dd_HH_mm,
     eHAF_Announce_WEEK_HH_mm,
@@ -19,12 +26,17 @@ typedef enum : NSUInteger {
 @protocol HAFVoiceClockProtocol <NSObject>
 
 -(void)set24HourClock:(BOOL)bValue;
--(NSArray *)announceThisTime:(HAF_Announce_Format_Type)type;
+-(NSArray<NSString *> *)announceThisTime:(HAF_Announce_Format_Type)type;
 
 @end
 
 @interface HAFVoiceClockManager : NSObject
 
+@property (nonatomic,assign)                                HAF_Announce_Rule           announceRule;
+@property (nonatomic,assign)                                HAF_Announce_Format_Type    announceType;
+@property (nonatomic,assign,getter=isTwentyfourHour)        BOOL                        twentyfourHour;
+
 +(instancetype)sharedManager;
+-(void)announceThisTimeUsingMandarin;
 
 @end
