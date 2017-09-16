@@ -9,15 +9,13 @@
 #import "HAFVoiceClockManager.h"
 #import "HAFAudioPlayer.h"
 #import "HAFMandarinVoiceClock.h"
+#import "HAFConfigureManager.h"
 
 static HAFVoiceClockManager *instance;
 @implementation HAFVoiceClockManager{
     HAFAudioPlayer                  *_player;
     HAFMandarinVoiceClock           *_mandarinClock;
     NSBundle                        *_bundleMandarin;
-    HAF_Announce_Format_Type        _announceType;
-    HAF_Announce_Rule               _announceRule;
-    BOOL                            _twentyfourHour;
     NSTimer                         *_taskDistributorTimer;
     NSTimer                         *_taskerTimer;
     NSDate                          *_nextFireDate;
@@ -40,8 +38,32 @@ static HAFVoiceClockManager *instance;
 }
 
 -(void)announceThisTimeUsingMandarin{
-    [_mandarinClock set24HourClock:_twentyfourHour];
-    [_player startPlaying:[_mandarinClock announceThisTime:_announceType] withBundle:_bundleMandarin];
+    [_mandarinClock set24HourClock:[self isTwentyfourHour]];
+    [_player startPlaying:[_mandarinClock announceThisTime:[self announceType]] withBundle:_bundleMandarin];
+}
+
+-(void)setAnnounceType:(HAF_Announce_Format_Type)announceType{
+    [[HAFConfigureManager sharedManager] setAnnounceType:announceType];
+}
+
+-(HAF_Announce_Format_Type)announceType{
+    return [[HAFConfigureManager sharedManager] announceType];
+}
+
+-(void)setAnnounceRule:(HAF_Announce_Rule)announceRule{
+    [[HAFConfigureManager sharedManager] setAnnounceRule:announceRule];
+}
+
+-(HAF_Announce_Rule)announceRule{
+    return [[HAFConfigureManager sharedManager] announceRule];
+}
+
+-(void)setTwentyfourHour:(BOOL)twentyfourHour{
+    [[HAFConfigureManager sharedManager] setTwentyfourHour:twentyfourHour];
+}
+
+-(BOOL)isTwentyfourHour{
+    return [[HAFConfigureManager sharedManager] isTwentyfourHour];
 }
 
 -(void)__initializeHAFVoiceClockManager{
@@ -64,7 +86,7 @@ static HAFVoiceClockManager *instance;
 -(void)__taskAction{
     BOOL bAnnounce = NO;
     NSDateComponents *comps = [[NSCalendar currentCalendar] components:NSMinuteCalendarUnit fromDate:[NSDate date]];
-    switch (_announceRule) {
+    switch ([self announceRule]) {
         case eHAF_Announce_Hourly:
             bAnnounce = (0 == comps.minute);
             break;
