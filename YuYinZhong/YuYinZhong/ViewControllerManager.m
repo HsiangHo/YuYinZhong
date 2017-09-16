@@ -7,9 +7,14 @@
 //
 
 #import "ViewControllerManager.h"
+#import "AboutWindowController.h"
+#import "PreferencesWindowController.h"
 
 static ViewControllerManager *instance;
-@implementation ViewControllerManager
+@implementation ViewControllerManager{
+    AboutWindowController                       *_aboutWindowController;
+    PreferencesWindowController                 *_preferencesController;
+}
 
 +(ViewControllerManager *)instance{
     @synchronized (self) {
@@ -28,16 +33,16 @@ static ViewControllerManager *instance;
 }
 
 -(void)__initializeViewControllerManager{
-//    _aboutWindowController = [[AboutWindowController alloc] init];
-//    _preferencesController = [[PreferencesWindowController alloc] init];
+    _aboutWindowController = [[AboutWindowController alloc] init];
+    _preferencesController = [[PreferencesWindowController alloc] init];
 }
 
 -(void)showAboutWindow{
-//    [_aboutWindowController showWindow:nil];
+    [_aboutWindowController showWindow:nil];
 }
 
 -(void)showPreferencesWindow{
-//    [_preferencesController showWindow:nil];
+    [_preferencesController showWindow:nil];
 }
 
 @end

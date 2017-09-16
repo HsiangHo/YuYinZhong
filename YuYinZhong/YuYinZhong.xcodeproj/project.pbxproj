@@ -38,7 +38,28 @@
 		984DE6371F6ADAC200F0BDC8 /* HAFVoiceClockManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 984DE6361F6ADAC200F0BDC8 /* HAFVoiceClockManager.m */; };
 		984DE63A1F6AE1E200F0BDC8 /* HAFMandarinVoiceClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 984DE6391F6AE1E200F0BDC8 /* HAFMandarinVoiceClock.m */; };
 		984DE6451F6CB58F00F0BDC8 /* ViewControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 984DE6441F6CB58F00F0BDC8 /* ViewControllerManager.m */; };
+		984DE64A1F6CBE6500F0BDC8 /* XUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 984DE6491F6CBE6500F0BDC8 /* XUIKit.framework */; };
+		984DE64B1F6CBE7600F0BDC8 /* XUIKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 984DE6491F6CBE6500F0BDC8 /* XUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		984DE6521F6CBFBC00F0BDC8 /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 984DE64C1F6CBFBC00F0BDC8 /* PreferencesWindowController.m */; };
+		984DE6531F6CBFBC00F0BDC8 /* PreferencesWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984DE64D1F6CBFBC00F0BDC8 /* PreferencesWindowController.xib */; };
+		984DE6541F6CBFBC00F0BDC8 /* AboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 984DE64E1F6CBFBC00F0BDC8 /* AboutWindowController.m */; };
+		984DE6551F6CBFBC00F0BDC8 /* AboutWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984DE64F1F6CBFBC00F0BDC8 /* AboutWindowController.xib */; };
+		984DE6591F6CC01200F0BDC8 /* HAFConfigureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 984DE6571F6CC01200F0BDC8 /* HAFConfigureManager.m */; };
+		984DE65E1F6CC80D00F0BDC8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6601F6CC80D00F0BDC8 /* Localizable.strings */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		984DE6461F6CBE3B00F0BDC8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				984DE64B1F6CBE7600F0BDC8 /* XUIKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		984DE5A01F685E9500F0BDC8 /* YuYinZhong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YuYinZhong.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,7 +67,6 @@
 		984DE5A41F685E9500F0BDC8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		984DE5A71F685E9500F0BDC8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		984DE5A91F685E9500F0BDC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		984DE5AC1F685E9500F0BDC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		984DE5AE1F685E9500F0BDC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		984DE5F51F6AA48400F0BDC8 /* HAFAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAFAudioPlayer.h; sourceTree = "<group>"; };
 		984DE5F61F6AA48400F0BDC8 /* HAFAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAFAudioPlayer.m; sourceTree = "<group>"; };
@@ -80,6 +100,18 @@
 		984DE6391F6AE1E200F0BDC8 /* HAFMandarinVoiceClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAFMandarinVoiceClock.m; sourceTree = "<group>"; };
 		984DE6431F6CB58F00F0BDC8 /* ViewControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerManager.h; sourceTree = "<group>"; };
 		984DE6441F6CB58F00F0BDC8 /* ViewControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerManager.m; sourceTree = "<group>"; };
+		984DE6491F6CBE6500F0BDC8 /* XUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XUIKit.framework; path = ../Build/Products/Output/XUIKit.framework; sourceTree = "<group>"; };
+		984DE64C1F6CBFBC00F0BDC8 /* PreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesWindowController.m; sourceTree = "<group>"; };
+		984DE64D1F6CBFBC00F0BDC8 /* PreferencesWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesWindowController.xib; sourceTree = "<group>"; };
+		984DE64E1F6CBFBC00F0BDC8 /* AboutWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutWindowController.m; sourceTree = "<group>"; };
+		984DE64F1F6CBFBC00F0BDC8 /* AboutWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutWindowController.xib; sourceTree = "<group>"; };
+		984DE6501F6CBFBC00F0BDC8 /* PreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesWindowController.h; sourceTree = "<group>"; };
+		984DE6511F6CBFBC00F0BDC8 /* AboutWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutWindowController.h; sourceTree = "<group>"; };
+		984DE6571F6CC01200F0BDC8 /* HAFConfigureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAFConfigureManager.m; sourceTree = "<group>"; };
+		984DE6581F6CC01200F0BDC8 /* HAFConfigureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAFConfigureManager.h; sourceTree = "<group>"; };
+		984DE65F1F6CC80D00F0BDC8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		984DE6611F6CC81000F0BDC8 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		984DE6621F6CC82500F0BDC8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				984DE64A1F6CBE6500F0BDC8 /* XUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +157,7 @@
 			children = (
 				984DE5A31F685E9500F0BDC8 /* AppDelegate.h */,
 				984DE5A41F685E9500F0BDC8 /* AppDelegate.m */,
+				984DE6561F6CBFEE00F0BDC8 /* Manager */,
 				984DE6421F6CB56D00F0BDC8 /* ViewController */,
 				984DE6411F6CB55B00F0BDC8 /* VoiceClock */,
 				984DE5A91F685E9500F0BDC8 /* Assets.xcassets */,
@@ -138,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				984DE5A71F685E9500F0BDC8 /* main.m */,
+				984DE6601F6CC80D00F0BDC8 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -184,6 +219,7 @@
 		984DE63B1F6BF68200F0BDC8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				984DE6491F6CBE6500F0BDC8 /* XUIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -206,8 +242,23 @@
 			children = (
 				984DE6431F6CB58F00F0BDC8 /* ViewControllerManager.h */,
 				984DE6441F6CB58F00F0BDC8 /* ViewControllerManager.m */,
+				984DE6501F6CBFBC00F0BDC8 /* PreferencesWindowController.h */,
+				984DE64C1F6CBFBC00F0BDC8 /* PreferencesWindowController.m */,
+				984DE64D1F6CBFBC00F0BDC8 /* PreferencesWindowController.xib */,
+				984DE6511F6CBFBC00F0BDC8 /* AboutWindowController.h */,
+				984DE64E1F6CBFBC00F0BDC8 /* AboutWindowController.m */,
+				984DE64F1F6CBFBC00F0BDC8 /* AboutWindowController.xib */,
 			);
 			name = ViewController;
+			sourceTree = "<group>";
+		};
+		984DE6561F6CBFEE00F0BDC8 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				984DE6581F6CC01200F0BDC8 /* HAFConfigureManager.h */,
+				984DE6571F6CC01200F0BDC8 /* HAFConfigureManager.m */,
+			);
+			name = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +271,7 @@
 				984DE59C1F685E9500F0BDC8 /* Sources */,
 				984DE59D1F685E9500F0BDC8 /* Frameworks */,
 				984DE59E1F685E9500F0BDC8 /* Resources */,
+				984DE6461F6CBE3B00F0BDC8 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -271,8 +323,8 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				"zh-Hant",
 			);
 			mainGroup = 984DE5971F685E9500F0BDC8;
 			productRefGroup = 984DE5A11F685E9500F0BDC8 /* Products */;
@@ -291,7 +343,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				984DE6311F6ACB9500F0BDC8 /* vc-ZH-Han.bundle in Resources */,
+				984DE65E1F6CC80D00F0BDC8 /* Localizable.strings in Resources */,
 				984DE5AA1F685E9500F0BDC8 /* Assets.xcassets in Resources */,
+				984DE6531F6CBFBC00F0BDC8 /* PreferencesWindowController.xib in Resources */,
+				984DE6551F6CBFBC00F0BDC8 /* AboutWindowController.xib in Resources */,
 				984DE5AD1F685E9500F0BDC8 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,8 +388,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				984DE5A81F685E9500F0BDC8 /* main.m in Sources */,
+				984DE6541F6CBFBC00F0BDC8 /* AboutWindowController.m in Sources */,
+				984DE6591F6CC01200F0BDC8 /* HAFConfigureManager.m in Sources */,
 				984DE5A51F685E9500F0BDC8 /* AppDelegate.m in Sources */,
 				984DE6371F6ADAC200F0BDC8 /* HAFVoiceClockManager.m in Sources */,
+				984DE6521F6CBFBC00F0BDC8 /* PreferencesWindowController.m in Sources */,
 				984DE5F71F6AA48400F0BDC8 /* HAFAudioPlayer.m in Sources */,
 				984DE6451F6CB58F00F0BDC8 /* ViewControllerManager.m in Sources */,
 				984DE63A1F6AE1E200F0BDC8 /* HAFMandarinVoiceClock.m in Sources */,
@@ -354,9 +412,18 @@
 		984DE5AB1F685E9500F0BDC8 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				984DE5AC1F685E9500F0BDC8 /* Base */,
+				984DE6621F6CC82500F0BDC8 /* zh-Hans */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		984DE6601F6CC80D00F0BDC8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				984DE65F1F6CC80D00F0BDC8 /* zh-Hans */,
+				984DE6611F6CC81000F0BDC8 /* zh-Hant */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -366,6 +433,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -413,6 +481,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

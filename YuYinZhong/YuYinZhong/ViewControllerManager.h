@@ -8,7 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+@class AboutWindowController;
+@class PreferencesWindowController;
 @interface ViewControllerManager : NSObject
+
+@property (nonatomic,strong,readonly)           AboutWindowController                           *aboutWindowController;
+@property (nonatomic,strong,readonly)           PreferencesWindowController                     *preferencesController;
 
 +(ViewControllerManager *)instance;
 -(void)showAboutWindow;

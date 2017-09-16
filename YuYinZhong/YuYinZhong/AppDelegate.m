@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "HAFVoiceClockManager.h"
+#import "ViewControllerManager.h"
 
 @interface AppDelegate ()
 
@@ -63,11 +64,11 @@
 }
 
 -(IBAction)about_click:(id)sender{
-    
+    [[ViewControllerManager instance] showAboutWindow];
 }
 
 -(IBAction)preference_click:(id)sender{
-    
+    [[ViewControllerManager instance] showPreferencesWindow];
 }
 
 -(IBAction)rate_click:(id)sender{
