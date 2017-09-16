@@ -37,6 +37,7 @@
 		984DE6311F6ACB9500F0BDC8 /* vc-Zh-Hans.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 984DE5FC1F6AC98B00F0BDC8 /* vc-Zh-Hans.bundle */; };
 		984DE6371F6ADAC200F0BDC8 /* HAFVoiceClockManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 984DE6361F6ADAC200F0BDC8 /* HAFVoiceClockManager.m */; };
 		984DE63A1F6AE1E200F0BDC8 /* HAFMandarinVoiceClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 984DE6391F6AE1E200F0BDC8 /* HAFMandarinVoiceClock.m */; };
+		984DE6451F6CB58F00F0BDC8 /* ViewControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 984DE6441F6CB58F00F0BDC8 /* ViewControllerManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,8 @@
 		984DE6361F6ADAC200F0BDC8 /* HAFVoiceClockManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAFVoiceClockManager.m; sourceTree = "<group>"; };
 		984DE6381F6AE1E200F0BDC8 /* HAFMandarinVoiceClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAFMandarinVoiceClock.h; sourceTree = "<group>"; };
 		984DE6391F6AE1E200F0BDC8 /* HAFMandarinVoiceClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAFMandarinVoiceClock.m; sourceTree = "<group>"; };
+		984DE6431F6CB58F00F0BDC8 /* ViewControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerManager.h; sourceTree = "<group>"; };
+		984DE6441F6CB58F00F0BDC8 /* ViewControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,12 +124,8 @@
 			children = (
 				984DE5A31F685E9500F0BDC8 /* AppDelegate.h */,
 				984DE5A41F685E9500F0BDC8 /* AppDelegate.m */,
-				984DE6351F6ADAC200F0BDC8 /* HAFVoiceClockManager.h */,
-				984DE6361F6ADAC200F0BDC8 /* HAFVoiceClockManager.m */,
-				984DE6381F6AE1E200F0BDC8 /* HAFMandarinVoiceClock.h */,
-				984DE6391F6AE1E200F0BDC8 /* HAFMandarinVoiceClock.m */,
-				984DE5F51F6AA48400F0BDC8 /* HAFAudioPlayer.h */,
-				984DE5F61F6AA48400F0BDC8 /* HAFAudioPlayer.m */,
+				984DE6421F6CB56D00F0BDC8 /* ViewController */,
+				984DE6411F6CB55B00F0BDC8 /* VoiceClock */,
 				984DE5A91F685E9500F0BDC8 /* Assets.xcassets */,
 				984DE5AB1F685E9500F0BDC8 /* MainMenu.xib */,
 				984DE5AE1F685E9500F0BDC8 /* Info.plist */,
@@ -186,6 +185,28 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		984DE6411F6CB55B00F0BDC8 /* VoiceClock */ = {
+			isa = PBXGroup;
+			children = (
+				984DE6351F6ADAC200F0BDC8 /* HAFVoiceClockManager.h */,
+				984DE6361F6ADAC200F0BDC8 /* HAFVoiceClockManager.m */,
+				984DE6381F6AE1E200F0BDC8 /* HAFMandarinVoiceClock.h */,
+				984DE6391F6AE1E200F0BDC8 /* HAFMandarinVoiceClock.m */,
+				984DE5F51F6AA48400F0BDC8 /* HAFAudioPlayer.h */,
+				984DE5F61F6AA48400F0BDC8 /* HAFAudioPlayer.m */,
+			);
+			name = VoiceClock;
+			sourceTree = "<group>";
+		};
+		984DE6421F6CB56D00F0BDC8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				984DE6431F6CB58F00F0BDC8 /* ViewControllerManager.h */,
+				984DE6441F6CB58F00F0BDC8 /* ViewControllerManager.m */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,6 +335,7 @@
 				984DE5A51F685E9500F0BDC8 /* AppDelegate.m in Sources */,
 				984DE6371F6ADAC200F0BDC8 /* HAFVoiceClockManager.m in Sources */,
 				984DE5F71F6AA48400F0BDC8 /* HAFAudioPlayer.m in Sources */,
+				984DE6451F6CB58F00F0BDC8 /* ViewControllerManager.m in Sources */,
 				984DE63A1F6AE1E200F0BDC8 /* HAFMandarinVoiceClock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
