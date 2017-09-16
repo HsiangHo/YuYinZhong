@@ -47,7 +47,7 @@
 
 -(void)__setupAboutInfo{
     NSDictionary *bundleDict = [[NSBundle mainBundle] infoDictionary];
-    NSString *strAppName = [bundleDict objectForKey:@"CFBundleName"];
+    NSString *strAppName = [NSBundle mainBundle].localizedInfoDictionary[@"CFBundleDisplayName"];
     
     NSString *version = [bundleDict objectForKey:@"CFBundleVersion"];
     NSString *shortVersion = [bundleDict objectForKey:@"CFBundleShortVersionString"];
