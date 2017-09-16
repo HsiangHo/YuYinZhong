@@ -5,3 +5,21 @@
   Created by Jovi on 9/16/17.
   Copyright © 2017 Jovi. All rights reserved.
 */
+
+
+"launch_at_login" = "登入时启动";
+"24_hour_mode" = "使用24小时模式";
+"language" = "语言设置";
+"announce_rule" = "报时规则";
+"announce_type" = "报时格式";
+"preferences" = "偏好设置";
+"announce_hourly" = "正点报时";
+"announce_half_hourly" = "半点报时";
+"announce_quarter_hourly" = "刻点报时";
+"announce_by_hand" = "仅在要求时报时";
+"announce" = "报时";
+"about" = "关于: 语音钟";
+"rate_in_App_Store" = "前往App Store评分";
+"tell_a_friend" = "推荐给朋友";
+"help" = "帮助";
+"quit" = "退出";
