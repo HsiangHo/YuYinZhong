@@ -118,6 +118,7 @@
 		9866A6711F6CEA7B009545AC /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
 		9866A6751F6CF32A009545AC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		9866A6771F6CF32C009545AC /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		9868A43A1F6D3B81006EFF92 /* YuYinZhong.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YuYinZhong.entitlements; sourceTree = "<group>"; };
 		988395C21F6D158600821AEB /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hant"; path = "zh-Hant.lproj/MainMenu.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,6 +163,7 @@
 		984DE5A21F685E9500F0BDC8 /* YuYinZhong */ = {
 			isa = PBXGroup;
 			children = (
+				9868A43A1F6D3B81006EFF92 /* YuYinZhong.entitlements */,
 				984DE5A31F685E9500F0BDC8 /* AppDelegate.h */,
 				984DE5A41F685E9500F0BDC8 /* AppDelegate.m */,
 				984DE6561F6CBFEE00F0BDC8 /* Manager */,
@@ -320,7 +322,13 @@
 				TargetAttributes = {
 					984DE59F1F685E9500F0BDC8 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9P895LY647;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					984DE5FB1F6AC98B00F0BDC8 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -544,8 +552,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = YuYinZhong/YuYinZhong.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/Output";
+				DEVELOPMENT_TEAM = 9P895LY647;
 				INFOPLIST_FILE = YuYinZhong/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
@@ -559,8 +570,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = YuYinZhong/YuYinZhong.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/Output";
+				DEVELOPMENT_TEAM = 9P895LY647;
 				INFOPLIST_FILE = YuYinZhong/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
