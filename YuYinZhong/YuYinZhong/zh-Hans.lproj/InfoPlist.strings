@@ -6,5 +6,4 @@
   Copyright © 2017 Jovi. All rights reserved.
 */
 
-CFBundleName = "语音钟";
 CFBundleDisplayName = "语音钟";
