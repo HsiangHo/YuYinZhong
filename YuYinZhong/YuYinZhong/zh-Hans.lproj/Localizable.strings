@@ -18,7 +18,7 @@
 "announce_quarter_hourly" = "刻点报时";
 "announce_by_hand" = "仅在要求时报时";
 "announce" = "报时";
-"about" = "关于: 语音钟";
+"about: %@" = "关于: %@";
 "rate_in_App_Store" = "前往App Store评分";
 "tell_a_friend" = "推荐给朋友";
 "help" = "帮助";
