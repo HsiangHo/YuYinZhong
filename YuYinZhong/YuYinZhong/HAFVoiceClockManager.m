@@ -71,6 +71,7 @@ static HAFVoiceClockManager *instance;
     _mandarinClock = [[HAFMandarinVoiceClock alloc] init];
     NSString *path = [[NSBundle mainBundle] pathForResource:@"vc-ZH-Han" ofType:@"bundle"];
     _bundleMandarin = [NSBundle bundleWithPath:path];
+    [self __distributeAnnounceTask];
     _taskDistributorTimer = [NSTimer scheduledTimerWithTimeInterval:60 target:self selector:@selector(__distributeAnnounceTask) userInfo:nil repeats:YES];
 }
 

@@ -69,6 +69,7 @@
     [[XUILanguageManager sharedManager] addLanguageChangedBlock:^{
         [self __localizeString];
     }];
+    [HAFVoiceClockManager sharedManager];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
