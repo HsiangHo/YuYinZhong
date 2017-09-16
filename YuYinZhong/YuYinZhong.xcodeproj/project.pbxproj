@@ -46,6 +46,7 @@
 		984DE6551F6CBFBC00F0BDC8 /* AboutWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984DE64F1F6CBFBC00F0BDC8 /* AboutWindowController.xib */; };
 		984DE6591F6CC01200F0BDC8 /* HAFConfigureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 984DE6571F6CC01200F0BDC8 /* HAFConfigureManager.m */; };
 		984DE65E1F6CC80D00F0BDC8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6601F6CC80D00F0BDC8 /* Localizable.strings */; };
+		9866A6741F6CF32A009545AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9866A6761F6CF32A009545AC /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -113,6 +114,8 @@
 		984DE6611F6CC81000F0BDC8 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		984DE6621F6CC82500F0BDC8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.xib"; sourceTree = "<group>"; };
 		9866A6711F6CEA7B009545AC /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
+		9866A6751F6CF32A009545AC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		9866A6771F6CF32C009545AC /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +167,7 @@
 				984DE5A91F685E9500F0BDC8 /* Assets.xcassets */,
 				984DE5AB1F685E9500F0BDC8 /* MainMenu.xib */,
 				984DE5AE1F685E9500F0BDC8 /* Info.plist */,
+				9866A6761F6CF32A009545AC /* InfoPlist.strings */,
 				984DE5A61F685E9500F0BDC8 /* Supporting Files */,
 			);
 			path = YuYinZhong;
@@ -345,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				984DE6311F6ACB9500F0BDC8 /* vc-ZH-Han.bundle in Resources */,
+				9866A6741F6CF32A009545AC /* InfoPlist.strings in Resources */,
 				984DE65E1F6CC80D00F0BDC8 /* Localizable.strings in Resources */,
 				984DE5AA1F685E9500F0BDC8 /* Assets.xcassets in Resources */,
 				984DE6531F6CBFBC00F0BDC8 /* PreferencesWindowController.xib in Resources */,
@@ -426,6 +431,15 @@
 				984DE6611F6CC81000F0BDC8 /* zh-Hant */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		9866A6761F6CF32A009545AC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9866A6751F6CF32A009545AC /* zh-Hans */,
+				9866A6771F6CF32C009545AC /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
