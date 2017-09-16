@@ -76,7 +76,7 @@
 
 -(void)__localizeString{
     [_menuItemAnnounce setTitle:XUILocalizedString(@"announce")];
-    [_menuItemAbout setTitle:XUILocalizedString(@"about: %@")];
+    [_menuItemAbout setTitle:XUILocalizedString(@"about")];
     [_menuItemPreferences setTitle:XUILocalizedString(@"preferences")];
     [_menuItemRate setTitle:XUILocalizedString(@"rate_in_App_Store")];
     [_menuItemTellFriends setTitle:XUILocalizedString(@"tell_a_friend")];
