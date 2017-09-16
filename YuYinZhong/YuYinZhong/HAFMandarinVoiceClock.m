@@ -28,6 +28,8 @@
 #define kRi                         @"ri"
 #define kNian                       @"nian"
 #define kXingqi                     @"xingqi"
+#define kShangwu                    @"shangwu"
+#define kXiawu                      @"xiawu"
 
 @implementation HAFMandarinVoiceClock{
     BOOL        _is24HourClock;
@@ -86,15 +88,32 @@
     NSInteger nHour = comps.hour;
     NSInteger nMinute = comps.minute;
     [arrayRslt addObject:kXianzaishijian];
-    if (2 == nHour/10) {
-        [arrayRslt addObject:k2];
-        [arrayRslt addObject:k10];
-    }else if (1 == nHour/10){
-        [arrayRslt addObject:k10];
-    }
-    
-    if (0 == nHour || 0 != nHour%10){
-         [arrayRslt addObject:[NSString stringWithFormat:@"%ld",nHour%10]];
+    if(_is24HourClock){
+        if (2 == nHour/10) {
+            [arrayRslt addObject:k2];
+            [arrayRslt addObject:k10];
+        }else if (1 == nHour/10){
+            [arrayRslt addObject:k10];
+        }
+        
+        if (0 == nHour || 0 != nHour%10){
+            [arrayRslt addObject:[NSString stringWithFormat:@"%ld",nHour%10]];
+        }
+    }else{
+        if (0 == nHour / 12) {
+            //AM
+            [arrayRslt addObject:kShangwu];
+        }else{
+            //PM
+            [arrayRslt addObject:kXiawu];
+        }
+        NSInteger nTmpHour = nHour % 12;
+        if (1 == nTmpHour/10){
+            [arrayRslt addObject:k10];
+        }
+        if (0 == nTmpHour || 0 != nTmpHour%10){
+            [arrayRslt addObject:[NSString stringWithFormat:@"%ld",nTmpHour%10]];
+        }
     }
     [arrayRslt addObject:kDian];
     
