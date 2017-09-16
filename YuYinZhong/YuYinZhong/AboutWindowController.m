@@ -17,6 +17,7 @@
     IBOutlet    NSTextField         *_lbAppName;
     IBOutlet    NSTextField         *_lbVersion;
     IBOutlet    NSTextField         *_lbCopyright;
+    IBOutlet    NSTextView          *_tvCredits;
     NSString                        *_strIconUrl;
 }
 
@@ -63,6 +64,11 @@
     [_lbAppName setStringValue:strAppName];
     [_lbVersion setStringValue:strAppVersion];
     [_lbCopyright setStringValue:strCopyRight];
+    
+    NSString *strCriditsFilePath = [[NSBundle mainBundle] pathForResource:@"Credits" ofType:@"rtf"];
+    if (nil != strCriditsFilePath) {
+        [_tvCredits readRTFDFromFile:strCriditsFilePath];
+    }
 }
 
 -(IBAction)icon_click:(id)sender{

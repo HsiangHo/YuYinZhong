@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		984146E41F6D298B00DE4023 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 984146E31F6D298B00DE4023 /* Credits.rtf */; };
 		984DE5A51F685E9500F0BDC8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 984DE5A41F685E9500F0BDC8 /* AppDelegate.m */; };
 		984DE5A81F685E9500F0BDC8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 984DE5A71F685E9500F0BDC8 /* main.m */; };
 		984DE5AA1F685E9500F0BDC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 984DE5A91F685E9500F0BDC8 /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		984146E31F6D298B00DE4023 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		984DE5A01F685E9500F0BDC8 /* YuYinZhong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YuYinZhong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		984DE5A31F685E9500F0BDC8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		984DE5A41F685E9500F0BDC8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 		984DE5A61F685E9500F0BDC8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				984146E31F6D298B00DE4023 /* Credits.rtf */,
 				9866A6711F6CEA7B009545AC /* define.h */,
 				984DE5A71F685E9500F0BDC8 /* main.m */,
 				984DE6601F6CC80D00F0BDC8 /* Localizable.strings */,
@@ -352,6 +355,7 @@
 				984DE6311F6ACB9500F0BDC8 /* vc-ZH-Han.bundle in Resources */,
 				9866A6741F6CF32A009545AC /* InfoPlist.strings in Resources */,
 				984DE65E1F6CC80D00F0BDC8 /* Localizable.strings in Resources */,
+				984146E41F6D298B00DE4023 /* Credits.rtf in Resources */,
 				984DE5AA1F685E9500F0BDC8 /* Assets.xcassets in Resources */,
 				984DE6531F6CBFBC00F0BDC8 /* PreferencesWindowController.xib in Resources */,
 				984DE6551F6CBFBC00F0BDC8 /* AboutWindowController.xib in Resources */,
