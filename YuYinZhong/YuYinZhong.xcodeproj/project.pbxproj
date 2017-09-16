@@ -34,7 +34,7 @@
 		984DE62C1F6ACA0100F0BDC8 /* xingqi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6161F6ACA0100F0BDC8 /* xingqi.wav */; };
 		984DE62D1F6ACA0100F0BDC8 /* yue.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6171F6ACA0100F0BDC8 /* yue.wav */; };
 		984DE62E1F6ACA0100F0BDC8 /* zheng.wav in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6181F6ACA0100F0BDC8 /* zheng.wav */; };
-		984DE6311F6ACB9500F0BDC8 /* vc-Zh-Hans.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 984DE5FC1F6AC98B00F0BDC8 /* vc-Zh-Hans.bundle */; };
+		984DE6311F6ACB9500F0BDC8 /* vc-ZH-Han.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 984DE5FC1F6AC98B00F0BDC8 /* vc-ZH-Han.bundle */; };
 		984DE6371F6ADAC200F0BDC8 /* HAFVoiceClockManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 984DE6361F6ADAC200F0BDC8 /* HAFVoiceClockManager.m */; };
 		984DE63A1F6AE1E200F0BDC8 /* HAFMandarinVoiceClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 984DE6391F6AE1E200F0BDC8 /* HAFMandarinVoiceClock.m */; };
 		984DE6451F6CB58F00F0BDC8 /* ViewControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 984DE6441F6CB58F00F0BDC8 /* ViewControllerManager.m */; };
@@ -50,7 +50,7 @@
 		984DE5AE1F685E9500F0BDC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		984DE5F51F6AA48400F0BDC8 /* HAFAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAFAudioPlayer.h; sourceTree = "<group>"; };
 		984DE5F61F6AA48400F0BDC8 /* HAFAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAFAudioPlayer.m; sourceTree = "<group>"; };
-		984DE5FC1F6AC98B00F0BDC8 /* vc-Zh-Hans.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "vc-Zh-Hans.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		984DE5FC1F6AC98B00F0BDC8 /* vc-ZH-Han.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "vc-ZH-Han.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		984DE5FE1F6AC98B00F0BDC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		984DE6031F6ACA0100F0BDC8 /* 0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 0.wav; sourceTree = "<group>"; };
 		984DE6041F6ACA0100F0BDC8 /* 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1.wav; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				984DE5A21F685E9500F0BDC8 /* YuYinZhong */,
-				984DE5FD1F6AC98B00F0BDC8 /* vc-Zh-Hans */,
+				984DE5FD1F6AC98B00F0BDC8 /* vc-ZH-Han */,
 				984DE5A11F685E9500F0BDC8 /* Products */,
 				984DE63B1F6BF68200F0BDC8 /* Frameworks */,
 			);
@@ -114,7 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				984DE5A01F685E9500F0BDC8 /* YuYinZhong.app */,
-				984DE5FC1F6AC98B00F0BDC8 /* vc-Zh-Hans.bundle */,
+				984DE5FC1F6AC98B00F0BDC8 /* vc-ZH-Han.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,12 +142,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		984DE5FD1F6AC98B00F0BDC8 /* vc-Zh-Hans */ = {
+		984DE5FD1F6AC98B00F0BDC8 /* vc-ZH-Han */ = {
 			isa = PBXGroup;
 			children = (
 				984DE5FE1F6AC98B00F0BDC8 /* Info.plist */,
 				984DE6021F6AC9AE00F0BDC8 /* audio */,
 			);
+			name = "vc-ZH-Han";
 			path = "vc-Zh-Hans";
 			sourceTree = "<group>";
 		};
@@ -229,9 +230,9 @@
 			productReference = 984DE5A01F685E9500F0BDC8 /* YuYinZhong.app */;
 			productType = "com.apple.product-type.application";
 		};
-		984DE5FB1F6AC98B00F0BDC8 /* vc-Zh-Hans */ = {
+		984DE5FB1F6AC98B00F0BDC8 /* vc-ZH-Han */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 984DE5FF1F6AC98B00F0BDC8 /* Build configuration list for PBXNativeTarget "vc-Zh-Hans" */;
+			buildConfigurationList = 984DE5FF1F6AC98B00F0BDC8 /* Build configuration list for PBXNativeTarget "vc-ZH-Han" */;
 			buildPhases = (
 				984DE5F81F6AC98B00F0BDC8 /* Sources */,
 				984DE5F91F6AC98B00F0BDC8 /* Frameworks */,
@@ -241,9 +242,9 @@
 			);
 			dependencies = (
 			);
-			name = "vc-Zh-Hans";
+			name = "vc-ZH-Han";
 			productName = "vc-Zh-Hans";
-			productReference = 984DE5FC1F6AC98B00F0BDC8 /* vc-Zh-Hans.bundle */;
+			productReference = 984DE5FC1F6AC98B00F0BDC8 /* vc-ZH-Han.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -279,7 +280,7 @@
 			projectRoot = "";
 			targets = (
 				984DE59F1F685E9500F0BDC8 /* YuYinZhong */,
-				984DE5FB1F6AC98B00F0BDC8 /* vc-Zh-Hans */,
+				984DE5FB1F6AC98B00F0BDC8 /* vc-ZH-Han */,
 			);
 		};
 /* End PBXProject section */
@@ -289,7 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				984DE6311F6ACB9500F0BDC8 /* vc-Zh-Hans.bundle in Resources */,
+				984DE6311F6ACB9500F0BDC8 /* vc-ZH-Han.bundle in Resources */,
 				984DE5AA1F685E9500F0BDC8 /* Assets.xcassets in Resources */,
 				984DE5AD1F685E9500F0BDC8 /* MainMenu.xib in Resources */,
 			);
@@ -487,7 +488,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.HyperartFlow.vc-Zh-Hans";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HyperartFlow.vc-ZH-Han";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
@@ -503,7 +504,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.HyperartFlow.vc-Zh-Hans";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HyperartFlow.vc-ZH-Han";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
@@ -531,7 +532,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		984DE5FF1F6AC98B00F0BDC8 /* Build configuration list for PBXNativeTarget "vc-Zh-Hans" */ = {
+		984DE5FF1F6AC98B00F0BDC8 /* Build configuration list for PBXNativeTarget "vc-ZH-Han" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				984DE6001F6AC98B00F0BDC8 /* Debug */,
