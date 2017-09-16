@@ -52,9 +52,10 @@
     [menu addItem:[NSMenuItem separatorItem]];
     [menu addItem:_menuItemPreferences];
     [menu addItem:[NSMenuItem separatorItem]];
-    [menu addItem:_menuItemAbout];
     [menu addItem:_menuItemRate];
     [menu addItem:_menuItemTellFriends];
+    [menu addItem:[NSMenuItem separatorItem]];
+    [menu addItem:_menuItemAbout];
     [menu addItem:_menuItemHelp];
     [menu addItem:[NSMenuItem separatorItem]];
     [menu addItem:_menuItemQuit];
