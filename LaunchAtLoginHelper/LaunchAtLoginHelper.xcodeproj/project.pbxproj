@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9810D1331F5DCF8300127BB7 /* LaunchAtLoginHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LaunchAtLoginHelper.entitlements; sourceTree = "<group>"; };
+		986CFFC51F6D35A80090F2DB /* LaunchAtLoginHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LaunchAtLoginHelper.entitlements; sourceTree = "<group>"; };
 		98E741541C2A42C1002605D2 /* LaunchAtLoginHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaunchAtLoginHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E741571C2A42C1002605D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		98E741581C2A42C1002605D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 		98E741561C2A42C1002605D2 /* LaunchAtLoginHelper */ = {
 			isa = PBXGroup;
 			children = (
-				9810D1331F5DCF8300127BB7 /* LaunchAtLoginHelper.entitlements */,
+				986CFFC51F6D35A80090F2DB /* LaunchAtLoginHelper.entitlements */,
 				98E741571C2A42C1002605D2 /* AppDelegate.h */,
 				98E741581C2A42C1002605D2 /* AppDelegate.m */,
 				98E7415D1C2A42C1002605D2 /* Assets.xcassets */,
@@ -265,7 +265,7 @@
 				INFOPLIST_FILE = LaunchAtLoginHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.HyperartFlow.com.HyperartFlow.YuYinZhong.LaunchAtLoginHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HyperartFlow.YuYinZhong.LaunchAtLoginHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -284,7 +284,7 @@
 				INFOPLIST_FILE = LaunchAtLoginHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.HyperartFlow.com.HyperartFlow.YuYinZhong.LaunchAtLoginHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HyperartFlow.YuYinZhong.LaunchAtLoginHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
