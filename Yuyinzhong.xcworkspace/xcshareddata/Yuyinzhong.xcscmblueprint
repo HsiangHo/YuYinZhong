@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "92CA5FDC3022FD3FF573E8FDBE1DB93FA9CDF159",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A79501168B8F0853EA0B3D2D9CB7C0B13A01D87C" : 9223372036854775807,
+    "92CA5FDC3022FD3FF573E8FDBE1DB93FA9CDF159" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "09646175-A6BF-4728-A68D-387DFB43E8DC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A79501168B8F0853EA0B3D2D9CB7C0B13A01D87C" : "XUIKitWorkspace\/",
+    "92CA5FDC3022FD3FF573E8FDBE1DB93FA9CDF159" : "YuYinZhong\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Yuyinzhong",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Yuyinzhong.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/HsiangHo\/YuYinZhong.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "92CA5FDC3022FD3FF573E8FDBE1DB93FA9CDF159"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/HsiangHo\/XUIKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A79501168B8F0853EA0B3D2D9CB7C0B13A01D87C"
+    }
+  ]
+}
