@@ -21,11 +21,11 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
-                <menuItem title="YuYinZhong" id="1Xt-HY-uBw">
+                <menuItem title="语音钟" id="1Xt-HY-uBw">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="YuYinZhong" systemMenu="apple" id="uQy-DD-JDr">
+                    <menu key="submenu" title="语音钟" systemMenu="apple" id="uQy-DD-JDr">
                         <items>
-                            <menuItem title="Quit YuYinZhong" keyEquivalent="q" id="4sb-4s-VLi">
+                            <menuItem title="退出 语音钟" keyEquivalent="q" id="4sb-4s-VLi">
                                 <connections>
                                     <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
                                 </connections>
@@ -35,7 +35,7 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="YuYinZhong" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="QvC-M9-y7g">
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="117" height="35"/>
