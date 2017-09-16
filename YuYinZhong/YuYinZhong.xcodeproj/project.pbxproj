@@ -112,6 +112,7 @@
 		984DE65F1F6CC80D00F0BDC8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		984DE6611F6CC81000F0BDC8 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		984DE6621F6CC82500F0BDC8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.xib"; sourceTree = "<group>"; };
+		9866A6711F6CEA7B009545AC /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +172,7 @@
 		984DE5A61F685E9500F0BDC8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9866A6711F6CEA7B009545AC /* define.h */,
 				984DE5A71F685E9500F0BDC8 /* main.m */,
 				984DE6601F6CC80D00F0BDC8 /* Localizable.strings */,
 			);
