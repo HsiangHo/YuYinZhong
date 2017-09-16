@@ -9,7 +9,7 @@
 #ifndef define_h
 #define define_h
 
-#define APP_NAME            @"语音钟"
+#define APP_NAME            [NSBundle mainBundle].localizedInfoDictionary[@"CFBundleDisplayName"]
 #define SHARE_CONTENT       @"最近我正在使用一款非常棒的App: 语音钟 - 中文语音报时. (语音超可爱喔！) 从Mac App Store获得: https://itunes.apple.com/app/id1286248614"
 
 #endif /* define_h */
