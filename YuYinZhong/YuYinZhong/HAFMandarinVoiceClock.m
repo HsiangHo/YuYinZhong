@@ -161,7 +161,9 @@
     if (nMonth > 9) {
         [arrayRslt addObject:k10];
     }
-    [arrayRslt addObject:[NSString stringWithFormat:@"%ld",nMonth%10]];
+    if (0 != nMonth%10){
+        [arrayRslt addObject:[NSString stringWithFormat:@"%ld",nMonth%10]];
+    }
     [arrayRslt addObject:kYue];
     
     if (nDay > 9) {
@@ -169,11 +171,12 @@
             [arrayRslt addObject:[NSString stringWithFormat:@"%ld",nDay/10]];
         }
         [arrayRslt addObject:k10];
-        if (0 != nDay%10) {
-            [arrayRslt addObject:[NSString stringWithFormat:@"%ld",nDay%10]];
-        }
-        [arrayRslt addObject:kRi];
     }
+    if (0 != nDay%10) {
+        [arrayRslt addObject:[NSString stringWithFormat:@"%ld",nDay%10]];
+    }
+    [arrayRslt addObject:kRi];
+    
     return [arrayRslt copy];
 }
 
