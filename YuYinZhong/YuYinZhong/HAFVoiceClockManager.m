@@ -19,6 +19,7 @@ static HAFVoiceClockManager *instance;
     NSTimer                         *_taskDistributorTimer;
     NSTimer                         *_taskerTimer;
     NSDate                          *_nextFireDate;
+    __weak id<HAFVoiceClockManagerDelegate> _delegate;
 }
 
 +(instancetype)sharedManager{
@@ -40,7 +41,12 @@ static HAFVoiceClockManager *instance;
 -(void)announceThisTimeUsingMandarin{
     [_mandarinClock set24HourClock:[self isTwentyfourHour]];
     [_player setVolume:[[HAFConfigureManager sharedManager] volume]];
+    [_delegate announcing];
     [_player startPlaying:[_mandarinClock announceThisTime:[self announceType]] withBundle:_bundleMandarin];
+}
+
+-(BOOL)isAnnouncing {
+    return [_player isPlaying];
 }
 
 -(void)setAnnounceType:(HAF_Announce_Format_Type)announceType{

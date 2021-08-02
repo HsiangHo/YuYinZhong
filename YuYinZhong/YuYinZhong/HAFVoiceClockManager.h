@@ -30,13 +30,21 @@ typedef enum : NSUInteger {
 
 @end
 
+@protocol HAFVoiceClockManagerDelegate <NSObject>
+
+-(void)announcing;
+
+@end
+
 @interface HAFVoiceClockManager : NSObject
 
 @property (nonatomic,assign)                                HAF_Announce_Rule           announceRule;
 @property (nonatomic,assign)                                HAF_Announce_Format_Type    announceType;
 @property (nonatomic,assign,getter=isTwentyfourHour)        BOOL                        twentyfourHour;
+@property (nonatomic,weak)                                  id<HAFVoiceClockManagerDelegate>    delegate;
 
 +(instancetype)sharedManager;
 -(void)announceThisTimeUsingMandarin;
+-(BOOL)isAnnouncing;
 
 @end

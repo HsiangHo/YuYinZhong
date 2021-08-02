@@ -86,7 +86,7 @@
     [menu addItem:[NSMenuItem separatorItem]];
     [menu addItem:_menuItemQuit];
     _statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:20];
-    NSImage *image = [NSImage imageNamed:@"AppIcon"];
+    NSImage *image = [NSImage imageNamed:@"statusbar"];
     [image setSize:NSMakeSize(18, 18)];
     [_statusItem setImage:image];
     [_statusItem setMenu:menu];
@@ -114,7 +114,28 @@
     [_menuItemQuit setTitle:XUILocalizedString(@"quit")];
 }
 
+-(void)__splash{
+    NSImage *image = [NSImage imageNamed:@"statusbar_splash"];
+    [image setSize:NSMakeSize(18, 18)];
+    [_statusItem setImage:image];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSImage *image = [NSImage imageNamed:@"statusbar"];
+        [image setSize:NSMakeSize(18, 18)];
+        [_statusItem setImage:image];
+        if ([[HAFVoiceClockManager sharedManager] isAnnouncing]) {
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [self __splash];
+            });
+        }
+    });
+}
+
+-(void)announcing {
+    [self __splash];
+}
+
 -(IBAction)announce_click:(id)sender{
+    [[HAFVoiceClockManager sharedManager] setDelegate:(id<HAFVoiceClockManagerDelegate>)self];
     [[HAFVoiceClockManager sharedManager] announceThisTimeUsingMandarin];
 }
 
