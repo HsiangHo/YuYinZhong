@@ -13,6 +13,7 @@
 @property (nonatomic,assign)                                NSUInteger                  announceRule;
 @property (nonatomic,assign)                                NSUInteger                  announceType;
 @property (nonatomic,assign,getter=isTwentyfourHour)        BOOL                        twentyfourHour;
+@property (nonatomic,assign)                                float                  volume;
 
 +(instancetype)sharedManager;
 -(BOOL)isStartup;

@@ -10,6 +10,8 @@
 
 @interface HAFAudioPlayer : NSObject
 
+@property (nonatomic,assign)                                float                  volume;
+
 -(void)startPlaying:(NSArray *)arrayTracks withBundle:(NSBundle *)bundle;
 -(void)stopPlaying;
 -(BOOL)isPlaying;

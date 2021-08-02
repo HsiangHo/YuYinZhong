@@ -14,6 +14,7 @@
     NSArray                 *_arrayOfTracks;
     NSUInteger              _currentTrackNumber;
     NSBundle                *_bundle;
+    float                   _volume;
 }
 
 -(void)startPlaying:(NSArray *)arrayTracks withBundle:(NSBundle *)bundle{
@@ -26,6 +27,7 @@
     _arrayOfTracks = arrayTracks;
     _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:[[self __bundle] pathForResource:[[NSString alloc] initWithString:[_arrayOfTracks objectAtIndex:_currentTrackNumber]] ofType:@"wav"]] error:NULL];
     _audioPlayer.delegate = (id<AVAudioPlayerDelegate>)self;
+    _audioPlayer.volume = _volume;
     [_audioPlayer play];
 }
 
@@ -58,6 +60,7 @@
             }
             _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:[[self __bundle] pathForResource:[[NSString alloc] initWithString:[_arrayOfTracks objectAtIndex:_currentTrackNumber]] ofType:@"wav"]] error:NULL];
             _audioPlayer.delegate = (id<AVAudioPlayerDelegate>)self;
+            _audioPlayer.volume = _volume;
             [_audioPlayer play];
         }
     }

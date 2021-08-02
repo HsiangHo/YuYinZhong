@@ -39,6 +39,7 @@ static HAFVoiceClockManager *instance;
 
 -(void)announceThisTimeUsingMandarin{
     [_mandarinClock set24HourClock:[self isTwentyfourHour]];
+    [_player setVolume:[[HAFConfigureManager sharedManager] volume]];
     [_player startPlaying:[_mandarinClock announceThisTime:[self announceType]] withBundle:_bundleMandarin];
 }
 

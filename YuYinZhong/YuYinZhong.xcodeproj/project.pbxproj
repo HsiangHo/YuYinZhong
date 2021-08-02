@@ -48,6 +48,7 @@
 		984DE6591F6CC01200F0BDC8 /* HAFConfigureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 984DE6571F6CC01200F0BDC8 /* HAFConfigureManager.m */; };
 		984DE65E1F6CC80D00F0BDC8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 984DE6601F6CC80D00F0BDC8 /* Localizable.strings */; };
 		9866A6741F6CF32A009545AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9866A6761F6CF32A009545AC /* InfoPlist.strings */; };
+		98BC6D221F80793700633376 /* LaunchAtLoginHelper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 98BC6D211F80793700633376 /* LaunchAtLoginHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,6 +59,16 @@
 			dstSubfolderSpec = 10;
 			files = (
 				984DE64B1F6CBE7600F0BDC8 /* XUIKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98BC6D201F80790200633376 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				98BC6D221F80793700633376 /* LaunchAtLoginHelper.app in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +131,7 @@
 		9866A6771F6CF32C009545AC /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		9868A43A1F6D3B81006EFF92 /* YuYinZhong.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YuYinZhong.entitlements; sourceTree = "<group>"; };
 		988395C21F6D158600821AEB /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hant"; path = "zh-Hant.lproj/MainMenu.xib"; sourceTree = "<group>"; };
+		98BC6D211F80793700633376 /* LaunchAtLoginHelper.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = LaunchAtLoginHelper.app; path = ../Build/Products/Output/LaunchAtLoginHelper.app; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +156,7 @@
 		984DE5971F685E9500F0BDC8 = {
 			isa = PBXGroup;
 			children = (
+				98BC6D211F80793700633376 /* LaunchAtLoginHelper.app */,
 				984DE5A21F685E9500F0BDC8 /* YuYinZhong */,
 				984DE5FD1F6AC98B00F0BDC8 /* vc-ZH-Han */,
 				984DE5A11F685E9500F0BDC8 /* Products */,
@@ -284,6 +297,7 @@
 				984DE59D1F685E9500F0BDC8 /* Frameworks */,
 				984DE59E1F685E9500F0BDC8 /* Resources */,
 				984DE6461F6CBE3B00F0BDC8 /* CopyFiles */,
+				98BC6D201F80790200633376 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -341,8 +355,10 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				Base,
 				"zh-Hant",
+				"zh-Hans",
 			);
 			mainGroup = 984DE5971F685E9500F0BDC8;
 			productRefGroup = 984DE5A11F685E9500F0BDC8 /* Products */;

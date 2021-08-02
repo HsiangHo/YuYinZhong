@@ -15,6 +15,7 @@
 #define kAnnounceRule                   @"announceRule"
 #define kAnnounceType                   @"announceType"
 #define kIsTwentyfourHour               @"isTwentyfourHour"
+#define kVolume                         @"volume"
 
 static HAFConfigureManager *instance;
 @implementation HAFConfigureManager
@@ -77,6 +78,19 @@ static HAFConfigureManager *instance;
 
 -(BOOL)isTwentyfourHour{
     return [[[NSUserDefaults standardUserDefaults] objectForKey:kIsTwentyfourHour] boolValue];
+}
+
+-(void)setVolume:(float)volume {
+    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithFloat:volume] forKey:kVolume];
+}
+
+-(float)volume {
+    float rslt = 0.8;
+    NSNumber *value = [[NSUserDefaults standardUserDefaults] valueForKey:kVolume];
+    if (value != nil) {
+        rslt = [value floatValue];
+    }
+    return rslt;
 }
 
 @end
