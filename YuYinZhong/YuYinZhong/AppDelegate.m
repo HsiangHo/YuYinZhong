@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "HAFVoiceClockManager.h"
 #import "ViewControllerManager.h"
+#import "HAFConfigureManager.h"
 #import <XUIKit/XUIKit.h>
 #import "define.h"
 
@@ -20,12 +21,15 @@
 @implementation AppDelegate{
     NSStatusItem                    *_statusItem;
     NSMenuItem                      *_menuItemAnnounce;
+    NSMenuItem                      *_menuItemVolume;
+    NSMenuItem                      *_menuItemVolumeSetting;
     NSMenuItem                      *_menuItemAbout;
     NSMenuItem                      *_menuItemPreferences;
     NSMenuItem                      *_menuItemRate;
     NSMenuItem                      *_menuItemTellFriends;
     NSMenuItem                      *_menuItemHelp;
     NSMenuItem                      *_menuItemQuit;
+    NSSlider                        *_slider;
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
@@ -34,21 +38,43 @@
     
     NSMenu *menu = [[NSMenu alloc] initWithTitle:@"Yuyinzhong-menu"];
     _menuItemAnnounce = [[NSMenuItem alloc] initWithTitle:@"" action:@selector(announce_click:) keyEquivalent:@"a"];
+    [_menuItemAnnounce setKeyEquivalentModifierMask:0];
     [_menuItemAnnounce setTarget:self];
+    
+    _menuItemVolume = [[NSMenuItem alloc] initWithTitle:@"" action:nil keyEquivalent:@""];
+    NSMenu *volumeMenu = [[NSMenu alloc] initWithTitle:@"volume-menu"];
+    [_menuItemVolume setSubmenu:volumeMenu];
+    
+    _menuItemVolumeSetting = [[NSMenuItem alloc] initWithTitle:@"" action:nil keyEquivalent:@""];
+    _slider = [[NSSlider alloc] initWithFrame:NSMakeRect(0, 0, 100, 20)];
+    [_slider setControlSize:NSControlSizeMini];
+    [_slider setDoubleValue:[[HAFConfigureManager sharedManager] volume]];
+    [_slider setAction:@selector(volume_click:)];
+    [_slider setTarget:self];
+    [_menuItemVolumeSetting setView:_slider];
+    [volumeMenu addItem:_menuItemVolumeSetting];
+    
     _menuItemAbout = [[NSMenuItem alloc] initWithTitle:@"" action:@selector(about_click:) keyEquivalent:@""];
     [_menuItemAbout setTarget:self];
+    
     _menuItemPreferences = [[NSMenuItem alloc] initWithTitle:@"" action:@selector(preference_click:) keyEquivalent:@","];
+    [_menuItemPreferences setKeyEquivalentModifierMask:0];
     [_menuItemPreferences setTarget:self];
+    
     _menuItemRate = [[NSMenuItem alloc] initWithTitle:@"" action:@selector(rateApp_click:) keyEquivalent:@""];
     [_menuItemRate setTarget:self];
+    
     _menuItemTellFriends = [[NSMenuItem alloc] initWithTitle:@"" action:@selector(tellFriends_click:) keyEquivalent:@""];
     [_menuItemTellFriends setSubmenu:[[XUISharingManager sharedManager] sharingMenu]];
+    
     _menuItemHelp = [[NSMenuItem alloc] initWithTitle:@"" action:@selector(help_click:) keyEquivalent:@""];
     [_menuItemHelp setTarget:self];
+    
     _menuItemQuit = [[NSMenuItem alloc] initWithTitle:@"" action:@selector(quit_click:) keyEquivalent:@"q"];
     [_menuItemQuit setTarget:self];
     
     [menu addItem:_menuItemAnnounce];
+    [menu addItem:_menuItemVolume];
     [menu addItem:[NSMenuItem separatorItem]];
     [menu addItem:_menuItemPreferences];
     [menu addItem:[NSMenuItem separatorItem]];
@@ -77,7 +103,9 @@
 }
 
 -(void)__localizeString{
+    int volume = [[HAFConfigureManager sharedManager] volume] * 100;
     [_menuItemAnnounce setTitle:XUILocalizedString(@"announce")];
+    [_menuItemVolume setTitle:[NSString stringWithFormat:XUILocalizedString(@"volume (%d%%)"), volume]];
     [_menuItemAbout setTitle:[NSString stringWithFormat:XUILocalizedString(@"about: %@"),APP_NAME]];
     [_menuItemPreferences setTitle:XUILocalizedString(@"preferences")];
     [_menuItemRate setTitle:XUILocalizedString(@"rate_in_App_Store")];
@@ -112,6 +140,11 @@
 
 -(IBAction)quit_click:(id)sender{
     [NSApp terminate:nil];
+}
+
+-(IBAction)volume_click:(id)sender{
+    [[HAFConfigureManager sharedManager] setVolume:[_slider doubleValue]];
+    [self __localizeString];
 }
 
 @end

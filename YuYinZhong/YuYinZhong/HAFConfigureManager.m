@@ -85,7 +85,7 @@ static HAFConfigureManager *instance;
 }
 
 -(float)volume {
-    float rslt = 0.8;
+    float rslt = 0.9;
     NSNumber *value = [[NSUserDefaults standardUserDefaults] valueForKey:kVolume];
     if (value != nil) {
         rslt = [value floatValue];

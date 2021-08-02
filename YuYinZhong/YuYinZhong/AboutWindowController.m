@@ -33,7 +33,6 @@
 }
 
 -(void)awakeFromNib{
-    [self.window setBackgroundColor:[NSColor colorWithCalibratedRed:250/255.0 green:250/255.0 blue:250/255.0 alpha:0.99]];
     [[self.window standardWindowButton:NSWindowMiniaturizeButton] setHidden:YES];
     [[self.window standardWindowButton:NSWindowZoomButton] setHidden:YES];
 }
@@ -42,6 +41,7 @@
     [self.window setLevel:NSStatusWindowLevel];
     [self.window center];
     [self __setupAboutInfo];
+    [_tvCredits setTextColor:[NSColor textColor]];
     [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
     [super showWindow:sender];
 }

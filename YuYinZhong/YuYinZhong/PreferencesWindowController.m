@@ -10,7 +10,7 @@
 #import <XUIKit/XUIKit.h>
 #import "HAFConfigureManager.h"
 
-#define TITLE_COLOR             [NSColor colorWithHex:@"#333333" alpha:1.0]
+#define TITLE_COLOR             [NSColor textColor]
 #define TITLE_FONT              [NSFont fontWithName:@"Helvetica Neue" size:14]
 
 @interface PreferencesWindowController ()
@@ -46,7 +46,6 @@
 }
 
 -(void)awakeFromNib{
-    [self.window setBackgroundColor:[NSColor colorWithCalibratedRed:250/255.0 green:250/255.0 blue:250/255.0 alpha:0.99]];
     [[self.window standardWindowButton:NSWindowMiniaturizeButton] setHidden:YES];
     [[self.window standardWindowButton:NSWindowZoomButton] setHidden:YES];
     [self.window setContentView:_mainView];
@@ -77,6 +76,7 @@
     _cbAnnounceRule = [[XUIComboBox alloc] initWithFrame:NSMakeRect(0, 0, 200, 26)];
     [_mainView addSubview:_cbAnnounceRule];
     [_cbAnnounceRule setTextColor:TITLE_COLOR];
+    [_cbAnnounceRule setBackgroundColor:[NSColor textBackgroundColor]];
     [_cbAnnounceRule setDelegate:(id<NSComboBoxDelegate>)self];
     
     _lbAnnounceTypeString = [[XUILabel alloc] initWithFrame:NSMakeRect(0, 0, 100, 23)];
@@ -88,6 +88,7 @@
     _cbAnnounceType = [[XUIComboBox alloc] initWithFrame:NSMakeRect(0, 0, 200, 26)];
     [_mainView addSubview:_cbAnnounceType];
     [_cbAnnounceType setTextColor:TITLE_COLOR];
+    [_cbAnnounceType setBackgroundColor:[NSColor textBackgroundColor]];
     for(NSString *style in _arrayAnnounceTypes){
         [_cbAnnounceType addItemWithObjectValue:style];
     }

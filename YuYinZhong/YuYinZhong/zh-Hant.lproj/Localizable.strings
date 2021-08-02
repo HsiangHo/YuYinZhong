@@ -19,6 +19,7 @@
 "announce_by_hand" = "僅在要求時報時";
 "announce" = "報時";
 "about: %@" = "關於: %@";
+"volume (%d%%)" = "音量 (%d%%)";
 "rate_in_App_Store" = "前往App Store評分";
 "tell_a_friend" = "推薦給朋友";
 "help" = "幫助";
